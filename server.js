@@ -858,7 +858,7 @@ let playerPos = {}
 let serverBalls = {}
 let football;
 let footballPos = {}
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', (req, res) => res.sendFile('index.html'))
 
 buildStadium()
 io.on('connection', connected);
